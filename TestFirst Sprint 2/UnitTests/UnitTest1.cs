@@ -26,6 +26,7 @@ namespace UnitTests
             Assert.AreEqual(water.About(), $"This {water} is not flavored and is 0 FLOZ\n");
 
             Assert.AreEqual(sodaMachine.ShowSodas(), $"{sodaMachine} contains {coke}, {rootBeer}, {water}, \n");
+            Assert.AreEqual(sodaMachine.TakeSoda(water), $"You have taken {water} from the machine\n");
         }
     }
 }
