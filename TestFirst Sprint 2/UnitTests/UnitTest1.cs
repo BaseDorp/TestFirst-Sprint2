@@ -21,11 +21,11 @@ namespace UnitTests
             sodaMachine.AddSoda(rootBeer);
             sodaMachine.AddSoda(water);
 
-            Assert.AreEqual(coke.About(), $"This {coke} is {flavor} flavored and is {ounces} FLOZ\n");
-            Assert.AreEqual(rootBeer.About(), $"This {rootBeer} is {flavor} flavored and is {ounces} FLOZ\n");
-            Assert.AreEqual(water.About(), $"This {water} is {flavor} flavored and is {ounces} FLOZ\n");
+            Assert.AreEqual(coke.About(), $"This {coke} is cherry flavored and is 0 FLOZ\n");
+            Assert.AreEqual(rootBeer.About(), $"This {rootBeer} is chocolate flavored and is 20 FLOZ\n");
+            Assert.AreEqual(water.About(), $"This {water} is not flavored and is 0 FLOZ\n");
 
-            Assert.AreEqual(sodaMachine.ShowSodas(), $"{sodaMachine} contains {coke}{rootBeer}{water}, \n");
+            Assert.AreEqual(sodaMachine.ShowSodas(), $"{sodaMachine} contains {coke}, {rootBeer}, {water}, \n");
         }
     }
 }
